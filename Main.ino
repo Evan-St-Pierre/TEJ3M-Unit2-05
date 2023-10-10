@@ -6,20 +6,20 @@
 
 #include <Servo.h>
 
-Servo servo;
+Servo servoMain;
 
 void setup() {
-  servo.attach(9);
-  servo.write(0);
+  servoMain.attach(9);
+  servoMain.write(0);
   delay(2000);
   
 }
 
 void loop() {
   
-  servo.write(180);
+  servoMain.write(180);
     delay(1000);
-  servo.write(0);
+  servoMain.write(0);
     delay(1000);
     
 }
